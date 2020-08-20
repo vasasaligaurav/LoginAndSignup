@@ -85,6 +85,10 @@ $ng new projectname
 After that open project directory in cmd
 for example (C:\Users\vasas\Desktop\Files\projectname)
 
-4.Then type ng serve -o to run the project.
+4.Now run command
+
+$npm install bootstrap
+
+5.Then type ng serve -o to run the project.
 
 

@@ -15,6 +15,13 @@ a) Steps to import:
 3.Then browse and select my project and press finish.
 (Now it will import all the dependencies.)
 
+4.In case if u get any errors:
+
+   1.right click on the project -> select build path -> select configure build path -> delete ojdbc6.jar(delete if any file shows error) -> select Apply and close.
+
+   2.right click on the project -> select maven -> click update project.
+
+
 b) Change application.properties file
 
 1.In ide open drop down of the project.

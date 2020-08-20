@@ -49,7 +49,7 @@ c) To Run:
 3.It will run.
 
 
---->Only after running this run the angular project.
+--->Only after running this run the angular project. Both the projects should simultaniously.
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
 # Angular Project (Front End)

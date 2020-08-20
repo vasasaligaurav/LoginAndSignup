@@ -48,3 +48,6 @@ c) To Run:
 2.Then Select SpringBoot.
 
 3.It will run.
+
+
+--->Only after running this run the angular project.

@@ -1,6 +1,5 @@
 # LoginAndSignup
-
-This is a spring boot project
+# Spring boot project (Back End)
 
 -->To Run this project we need sts ide link given below.
   https://spring.io/tools#suite-three
@@ -51,3 +50,41 @@ c) To Run:
 
 
 --->Only after running this run the angular project.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+# Angular Project (Front End)
+
+--> To Run angular project you need to install following programs:
+
+1.nodejs https://nodejs.org/en/download/ and install.
+
+2.Angular 6.0.
+
+--> For installing Angular 6.0:
+
+1.To check node js is available or not:
+
+Open command prompt and type
+
+$ npm -version
+
+$ node -version
+
+And then type below command to install Angular
+
+2.$npm install -g @angular/cli@6.0
+
+-->After installing
+
+1.Open cmd and create new Angular project by typing
+
+$ng new projectname
+
+2.After creating the new project replace the src in the project with my src provided in this repository.
+
+After that open project directory in cmd
+for example (C:\Users\vasas\Desktop\Files\projectname)
+
+4.Then type ng serve -o to run the project.
+
+

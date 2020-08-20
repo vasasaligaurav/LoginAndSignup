@@ -36,7 +36,7 @@ public class Users {
 
 	@Column
 	@NotNull
-	private int phoneNumber;
+	private long phoneNumber;
 
 	public Integer getUserId() {
 		return userId;
@@ -78,15 +78,16 @@ public class Users {
 		this.password = password;
 	}
 
-	public int getPhoneNumber() {
+	public long getPhoneNumber() {
 		return phoneNumber;
 	}
 
-	public void setPhoneNumber(int phoneNumber) {
+	public void setPhoneNumber(long phoneNumber) {
 		this.phoneNumber = phoneNumber;
 	}
 
-	public Users(Integer userId, String firstname, String lastname, String username, String password, int phoneNumber) {
+	public Users(Integer userId, String firstname, String lastname, String username, String password,
+			long phoneNumber) {
 		super();
 		this.userId = userId;
 		this.firstname = firstname;
@@ -95,5 +96,12 @@ public class Users {
 		this.password = password;
 		this.phoneNumber = phoneNumber;
 	}
+
+	public Users() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
+	
 	
 }

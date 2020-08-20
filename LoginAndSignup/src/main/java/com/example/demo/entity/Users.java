@@ -19,14 +19,24 @@ public class Users {
 	private Integer userId;
 	
 	@Column
-	private String name;
+	@NotNull
+	private String firstname;
 	
+	@Column
+	@NotNull
+	private String lastname;
 	
 	@Column(unique = true)
+	@NotNull
 	private String username;
 	
 	@Column
+	@NotNull
 	private String password;
+
+	@Column
+	@NotNull
+	private int phoneNumber;
 
 	public Integer getUserId() {
 		return userId;
@@ -36,12 +46,20 @@ public class Users {
 		this.userId = userId;
 	}
 
-	public String getName() {
-		return name;
+	public String getFirstname() {
+		return firstname;
 	}
 
-	public void setName(String name) {
-		this.name = name;
+	public void setFirstname(String firstname) {
+		this.firstname = firstname;
+	}
+
+	public String getLastname() {
+		return lastname;
+	}
+
+	public void setLastname(String lastname) {
+		this.lastname = lastname;
 	}
 
 	public String getUsername() {
@@ -60,16 +78,22 @@ public class Users {
 		this.password = password;
 	}
 
-	public Users() {
-		super();
-		// TODO Auto-generated constructor stub
+	public int getPhoneNumber() {
+		return phoneNumber;
 	}
 
-	public Users(Integer userId, String name, String username, String password) {
+	public void setPhoneNumber(int phoneNumber) {
+		this.phoneNumber = phoneNumber;
+	}
+
+	public Users(Integer userId, String firstname, String lastname, String username, String password, int phoneNumber) {
 		super();
 		this.userId = userId;
-		this.name = name;
+		this.firstname = firstname;
+		this.lastname = lastname;
 		this.username = username;
 		this.password = password;
+		this.phoneNumber = phoneNumber;
 	}
+	
 }

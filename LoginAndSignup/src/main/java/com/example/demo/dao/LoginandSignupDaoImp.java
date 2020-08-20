@@ -9,15 +9,17 @@ import com.example.demo.entity.Users;
 import com.example.demo.exception.LoginException;
 
 @Repository
-public class LoginandSignupDaoImp {
+public class LoginandSignupDaoImp implements LoginandSignupDao {
 	
 	@Autowired
 	private EntityManager entityManager;
+	@Override
 	public boolean createAccount(Users User) {
 		entityManager.persist(User);
 		return true;
 	}
 	
+	@Override
 	public Integer loginValidate(String uName, String pass) throws LoginException {
 
 		Integer uid;
